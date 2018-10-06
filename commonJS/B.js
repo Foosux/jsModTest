@@ -1,9 +1,10 @@
 
-//  if you want your module to be of a specific object type, use module.exports;
-//  if you want your module to be a typical module instance, use exports.
+exports = module.exports = {
+  sayName: ()=>{
+    console.log('My Name is: Tom')
+  }
+}
 
-
-module.exports.say = () => {}
-exports.age = 18
-
-console.log(exports, module.exports) // {age:18, say: [Function]},  {age:18, say: [Function]}
+exports.getName = () => {
+  console.log('myName')
+}

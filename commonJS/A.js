@@ -1,10 +1,10 @@
 // 两种方法的比较
 
 exports.getName = function() {
-  console.log('My Name is: KKK')
+  console.log('Tom')
 }
 exports.sayName = function(){
-  console.log('myName')
+  console.log('My Name is: Tom')
 }
 
 // module.exports = {

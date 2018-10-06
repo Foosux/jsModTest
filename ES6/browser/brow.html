@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>浏览器加载SE6模块</title>
+</head>
+<body>
+
+<!-- 第一种用法 ，等同于打开的 defer-->
+<script type="module" src='../module/ES.js'></script>
+
+<!-- 第二种用法 -->
+<script type="module">
+  // 需要放置在静态服务下，否则报错（不支持file协议）
+  import sayName, { age } from '../module/ES.js'
+
+  sayName()
+  console.log(age)
+</script>
+
+</body>
+</html>

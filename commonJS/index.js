@@ -1,4 +1,10 @@
-var mod = require('./A')
+// var mod = require('./A')
+//
+// mod.getName()
+// mod.sayName()
 
-mod.getName()
-mod.sayName()
+
+var { sayName, getName } = require('./B')
+
+sayName()
+getName()
