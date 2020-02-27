@@ -15,3 +15,4 @@ ES6()
 // 混合使用
 let commonJS = require('../module/commonJS.js')
 console.log(commonJS.name, commonJS.getName)
+console.log('test')
